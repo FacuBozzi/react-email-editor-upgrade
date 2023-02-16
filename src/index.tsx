@@ -148,7 +148,7 @@ const EmailEditor = (props: Props, ref: React.ForwardedRef<EditorRef>) => {
         minHeight: minHeight,
       }}
     >
-      <div id={editorId.current} style={{ ...style, flex: 1 }} />
+      <div id={editorId.current} key={editorId.current} style={{ ...style, flex: 1 }} />
     </div>
   );
 };
